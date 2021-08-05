@@ -62,7 +62,8 @@ function sonIguales(x, y) {
   // Tu código:
   if (x===y){
     return true;
-  } return false;
+  } 
+  return false;
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -81,7 +82,8 @@ function menosQueNoventa(num) {
   // Tu código:
   if (num<90){
     return true;
-  } return false;
+  } 
+  return false;
 }
 
 function mayorQueCincuenta(num) {
@@ -103,18 +105,20 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ((num % 2)===0){
+  if (num % 2===0){
     return true;
-  } return false;
+  } 
+  return false;
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ((num % 2)>0){
+  if (num % 2>0){
     return true;
-  } return false;
+  } 
+  return false;
 }
 
 function elevarAlCuadrado(num) {
@@ -163,8 +167,9 @@ function esPositivo(numero) {
     return false;
   } else if (numero >0) {
  return "Es positivo";  
-} 
+} else{
  return "Es negativo";
+}
 }
 
 function agregarSimboloExclamacion(str) {
@@ -214,7 +219,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return (euro * 1.20);
+  return euro * 1.20;
   
 }
 
@@ -229,8 +234,8 @@ function esVocal(letra){
   } 
   if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u" ) {
     return "Es vocal"
-  }
-  return "Dato incorrecto";
+  
+}
 }
 
 

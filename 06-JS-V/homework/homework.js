@@ -91,14 +91,8 @@ String.prototype.reverse = function(){
         this.apellido = apellido;
         this.edad = edad;
         this.domicilio = domicilio;
-        //this.detalle = function(){
-          //return {
-           // Nombre: nombre,
-           // Apellido: apellido,
-          //  Edad: edad,
-           // Domicilio: domicilio,
-            
-          }
+       
+      }
           detalle(){
             return{
               nombre: this.nombre,

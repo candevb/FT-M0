@@ -6,6 +6,12 @@ function mayuscula(nombre) {
   //Tu código:
   return nombre[0].toUpperCase() + nombre.slice(1);
 }
+/*
+var arr = nombre.split("");
+arr[0] = arr[0].toUpperCase();
+return arr.join("");
+
+*/
 
 
 /*function mayuscula(nombre) {
@@ -30,7 +36,9 @@ function operacionMatematica(n1, n2, cb) {
 
 function sumarArray(numeros, cb) {
   // Suma todos los números enteros (int/integers) de un array ("numeros")
-  // Pasa el resultado a `cb`
+  // ejem: [2,5,7]---14
+  //        cb(14)
+  //Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
   var sumarArray = numeros.reduce (function(acumulador, elemento){
@@ -56,6 +64,10 @@ function forEach(array, cb) {
     cb(elemento)
   })
 
+  /* alternativa
+   array.forEach(cb)
+  */
+
   }
 
 function map(array, cb) {
@@ -70,6 +82,11 @@ function map(array, cb) {
 return nuevoArr;
 }
 
+/*
+var arr = array.map(cb);
+
+*/
+
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
@@ -79,6 +96,13 @@ function filter(array) {
   return elementos.charAt(0)==="a"
 })
 return filtrado;  
+
+/*
+var arr = array.filter(function(elemento){
+  return elemento[0] === "a"
+})
+
+*/
   
   
 }
